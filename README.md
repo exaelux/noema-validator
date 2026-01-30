@@ -1,5 +1,4 @@
 # noema-validator
-# noema-validator
 
 Minimal, non-normative reference validator for **Noema Core** objects.
 

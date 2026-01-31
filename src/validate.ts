@@ -1,4 +1,4 @@
-import Ajv from "ajv";
+import Ajv from "ajv/dist/2020.js";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -16,7 +16,7 @@ const schemaPath = path.join(
 const schema = JSON.parse(fs.readFileSync(schemaPath, "utf-8"));
 
 // Create AJV instance
-const ajv = new Ajv({ allErrors: true });
+const ajv = new Ajv({ allErrors: true, strict: false });
 const validate = ajv.compile(schema);
 
 // CLI usage: node dist/validate.js file.json

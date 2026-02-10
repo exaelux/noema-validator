@@ -1,0 +1,14 @@
+{
+  "noema_version": "0.1",
+  "object_id": "cert:issuer:example-001",
+  "existence": true,
+  "meaning": {
+    "type": "certificate",
+    "issuer": "issuer:example",
+    "subject": "subject:example",
+    "issued_at": "2026-02-10T00:00:00Z",
+    "valid_until": "2026-12-31T23:59:59Z",
+    "status": "Active"
+  },
+  "visibility_abstract": "verifiable-certificate"
+}
